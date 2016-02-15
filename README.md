@@ -18,7 +18,7 @@ reading skills as well as your coding skills!
 
 1. Set up a [Github app](https://github.com/settings/developers) and get a Client ID and Secret for use with
    this lab.
-2. Update the `RepositoriesController` and use Faraday to use the Github
+2. Update the `RepositoriesController` and use Faraday to query the Github
    [repository search](https://developer.github.com/v3/search/#search-repositories). Use your [client ID and secret](https://developer.github.com/v3/#increasing-the-unauthenticated-rate-limit-for-oauth-applications) for the request.
 3. Display the search results on the page. Include the name, a link to
    the repository, and the description.
