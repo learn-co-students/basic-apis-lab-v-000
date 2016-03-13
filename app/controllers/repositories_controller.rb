@@ -5,8 +5,8 @@ class RepositoriesController < ApplicationController
   end
 
   def github_search
-    client_id = '1074860a9dd807da1146'
-    client_secret = '3d0e3e12d8765266d4606f7ac78dd6c562fb95b5'
+    client_id = 'also secret'
+    client_secret = 'secret'
     query = params[:query]
 
     begin
