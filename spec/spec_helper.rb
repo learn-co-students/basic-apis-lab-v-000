@@ -89,4 +89,12 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  
+
+
+  config.after do |example|
+    if example.metadata[:type] == :feature and example.exception.present?
+      save_and_open_page
+    end
+  end
 end
