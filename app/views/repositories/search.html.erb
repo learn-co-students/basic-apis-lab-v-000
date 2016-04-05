@@ -5,3 +5,19 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+  <% if @error %>
+    <p><%= @error %> </p>
+  <% elsif @items %>
+    <ul>
+    <% @items.each do |item| %>
+      <li>
+        <%= item["name"] %> - <%= link_to item["html_url"],"#{item['html_url']}" %> - <%= item["description"] %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
+<br>
+
+<!-- link_to micropost.website, "http://#{micropost.website}" -->
