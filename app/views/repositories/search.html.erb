@@ -5,3 +5,20 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @repos %>
+  <div>
+    <% @repos["items"].each do |repo| %>
+    <div>
+      <%= repo["name"] %>
+    </div>
+    <div>
+    <a href=<%= repo["html_url"] %>><%= repo["html_url"] %></a>
+    </div>
+    <div>
+    <%= repo["description"] %>
+    </div>
+    <% end %>
+
+  </div>
+<% end %>
+
