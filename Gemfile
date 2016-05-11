@@ -38,6 +38,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'shoulda-matchers'
+  gem 'faraday'
 end
 gem 'webmock', group: :test
 
