@@ -12,11 +12,13 @@
 		<% @items.each do |item| %>
 			<li>
 				<div>
-					<p><a href=<%= "#{item['html_url']}"%> target="_blank"><%= "#{item['html_url']}"%></a></p>
-					<p><%= item['name']%></p>
+					
+					<h1><%= item['name']%>:</h1>
 					<p><%= item['description'] %></p>
+					<p><a href=<%= "#{item['html_url']}"%> target="_blank"><%= "#{item['html_url']}"%></a></p>
 				</div>
 			</li>
+			<hr>
 		<% end %>
 	</ul>
 	<% end %>
