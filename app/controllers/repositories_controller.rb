@@ -20,7 +20,7 @@ class RepositoriesController < ApplicationController
     end
 
 
-    # binding.pry
+    binding.pry
     render 'search'
   end
 end

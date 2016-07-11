@@ -4,11 +4,12 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
-<%= binding.pry%>
-<%if @response.each do |x|%>
+<!--  <%= binding.pry%> -->
+<%if @response%>
+  <%= @response.each do |x|%>
 <div class="">
 <ul>
-  <li><%= link_to x['owner']['url'], x['owner']['url'] %></li>
+  <li><%= link_to x['html_url'], x['html_url'] %></li>
 </ul>
 
 </div>
