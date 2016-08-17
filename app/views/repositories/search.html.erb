@@ -1,7 +1,17 @@
 <h1>Search Github Repositories</h1>
 <%= form_tag '/search' do %>
   <%= label_tag :query %>
-  <%= text_field_tag :query %>
+  <%= text_field_tag :query, params[:query] %>
   <%= submit_tag "Search Github!" %>
 <% end %>
-
+<% if @results %>
+  <h1>Search Github Repositories Results:</h1>
+  <% @results.each do |result| %>
+    <h3><%= result['full_name'] %></h3>
+    <p><%= link_to result['html_url'], result['html_url'] %></p>
+    <p><%= result['description'] %></p>
+  <% end %>
+<% elsif @error %>
+    <h1>Your search resulted in an error:</h1>
+    <p class="error"><%= @error %></p>
+<% end %>
