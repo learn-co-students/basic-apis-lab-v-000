@@ -3,5 +3,21 @@
   <%= label_tag :query %>
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
+  <div>
+  	<% if @error %>
+  	<p><%= @error%></p>
+  	<% elsif @contents %>
+  	<ul>
+  		<%@contents.each do |content| %>
+  		<li>
+  			<%= content['name'] %><br>
+  			<%= content['description']%><br>
+  			<%= link_to content['html_url'], content['html_url']%>
+
+  		</li>
+  		<% end %>
+  	</ul>
+  	<% end %>
+  </div>
 <% end %>
 
