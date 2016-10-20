@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+require 'pry'
 RSpec.describe "Searching Github", type: :feature do
 
   it "displays the right data" do
@@ -8,7 +8,6 @@ RSpec.describe "Searching Github", type: :feature do
     visit '/search'
     fill_in 'query', with: "tetris"
     click_button "Search Github!"
-
     expect(page).to have_link("https://github.com/dtrupenn/Tetris", href: "https://github.com/dtrupenn/Tetris")
     expect(page).to have_content("Tetris")
     expect(page).to have_content("A C implementation of Tetris using Pennsim through LC4")
