@@ -1,0 +1,10 @@
+<h2>Search Results</h2>
+<% if @repos %>
+	<% @repos.each do |repo| %>
+		Name:<%=repo['name']%>
+		Link to repo: <a href="<%= repo['html_url'] %>"><%= repo['html_url'] %></a>
+		Description: <%= repo['description'] %>
+		<br>
+		<br>
+	<%end%>
+<%end%>
