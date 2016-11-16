@@ -11,7 +11,7 @@
       <% @items.each do |item| %>
       <li>
         <%= item["name"] %><br>
-        <%= item["html_url"] %><br>
+        <%= link_to item["html_url"], item["html_url"] %><br>
         <%= item["description"] %><br>
       </li>
     <% end %>
