@@ -5,3 +5,18 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @error %>
+	<p>Error: <%= @error %></p>
+<% elsif @results %>	
+	<h2><%= @count %> Search results for <%= @query %></h2>
+	<% @items.each do |item| %>
+		<h4><%= link_to item['name'], item['url'] %>, by <%= link_to item['owner']['login'], item['owner']['html_url'] %></h4>
+		<p><%= item['description'] %></p>
+		<p>Link: <%= link_to item['html_url'], item['html_url'] %></p>
+		<img src="<%= item['owner']['avatar_url'] %>">
+	<% end %>
+<% end %>
+
+<hr>
+<h3>Debug:</h3>
+<%= @body %>
