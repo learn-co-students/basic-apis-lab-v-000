@@ -14,8 +14,8 @@
    <% elsif @items %>
      <% @items.each do |item|%>
          <strong>Reponame: <%= item['name'] %></strong><br>
-         Repo URL: <%= item['html_url'] %><br>
-         Repo Description: <%= item['description'] %>
+         Repo URL:   <%= link_to item["html_url"], item["html_url"] %><br><br>
+         Repo Description: <%= item['description'] %>s
         <br><br>
       <% end %>
   <% end %>
