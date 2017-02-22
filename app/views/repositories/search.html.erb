@@ -5,3 +5,11 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @resp %>
+  <% JSON.parse(@resp.body)["items"].each do |item|  %><br>
+  <%= item["name"] %><br>
+  <%= link_to item["html_url"], item["html_url"] %><br>
+  <%= item["description"] %><br>
+  <br>
+<% end %>
+<% end %>
