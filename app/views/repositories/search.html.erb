@@ -5,3 +5,16 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div class="error">
+  <%= @error if @error %>
+</div>
+
+<div class="results">
+  <ul>
+    <% if @results %>
+      <% @results.each do |result| %>
+        <li><%= result['name'] %>: <%= link_to result['html_url'], result['html_url'] %> <p><%= result['description'] %></p></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
