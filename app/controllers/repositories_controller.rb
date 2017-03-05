@@ -17,7 +17,6 @@ class RepositoriesController < ApplicationController
       if @response.success?
         body_hash = JSON.parse(@response.body) 
         @repos = body_hash["items"]
-            #ispect "stop"
       else
         @error = @response.message
       end
