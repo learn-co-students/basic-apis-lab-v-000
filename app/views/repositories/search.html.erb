@@ -5,3 +5,46 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<h3>Selected API response parameters:</h3>
+<div>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% elsif @repos %>
+    <% @repos.each do |repo| %>
+    <ul>
+      <li>
+        <%= repo["name"] %><br>   
+        <%= link_to repo["html_url"], repo["html_url"] %><br>
+        <%= repo["description"] %>
+      </li>
+    <% end %>
+  <% end %>
+  </ul>
+ 
+</div>
+<div>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% elsif @repos %>
+  <table>
+    <th>
+      <tr>
+        <td>Name</td>
+        <td>Link to repository</td>
+        <td>Description</td>
+        </tr>
+    </th></strong>
+    <% @repos.each do |repo| %>
+    <tr>
+      <td><%= repo["name"] %></td>    
+      <td><a href="<%= link_to repo["html_url"] %>"></td>
+      <td><%= repo["description"] %></td>
+    <% end %>
+  <% end %>
+  </tr>
+</table>
+</div>
+ 
+<h3>Full API response: </h3>
+<%= @bodies %>
+
