@@ -5,3 +5,13 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @repositories %>
+<% @repositories.each do |repo| %>
+  <%= repo["owner"]["login"] %>
+  <br>
+  <%= link_to repo["html_url"], repo["html_url"] %>
+  <br>
+  <br />
+  <%= repo["description"] %>
+<% end %>
+<% end %>
