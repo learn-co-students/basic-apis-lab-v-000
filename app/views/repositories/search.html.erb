@@ -5,3 +5,24 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% elsif @repositories %>
+    <ul>
+    <% @repositories.each do |repository| %>
+      <li>
+        Name: <%= repository["name"] %><br>
+        Url: <a href= <%="${repository["owner"]["url"]}"%> </a>
+        Description: <%= repository["description"] %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
+
+
+
+
+
+Include the name, a link to the repository, and the description.
