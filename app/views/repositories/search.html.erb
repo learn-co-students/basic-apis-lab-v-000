@@ -4,4 +4,19 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
-
+<br>
+<div>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% elsif @repositories %>
+    <ul>
+    <% @repositories.each do |repository| %>
+      <li>
+        Name: <%= repository["name"] %><br>
+        Url: <%= link_to repository["html_url"], repository["html_url"] %><br>
+        Description: <%= repository["description"] %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
