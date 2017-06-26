@@ -4,4 +4,13 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
+<% if @venues %>
+  <%@venues.each do |v|%>
+    <li>
+      <%= v["name"]%>
+      <%= link_to v["html_url"], v["html_url"]  %>
+      <%= v["description"]%>
+    </li>
+  <%end%>
+<%end%>
 
