@@ -5,7 +5,9 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 <div>
-  <% if @items %>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% elsif @items %>
   <ul>
     <% @items.each do |item| %>
       <li>

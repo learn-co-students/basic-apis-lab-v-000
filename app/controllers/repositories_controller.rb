@@ -11,7 +11,11 @@ class RepositoriesController < ApplicationController
       req.params[:client_secret] = '7d592224ee90e7e218ef7213146d3d1d031687b1'
     end
     body = JSON.parse(@resp.body)
-    @items = body["items"]
+    if @resp.success?
+      @items = body["items"]
+    else
+      @error = body["message"]
+    end
     render 'search'
   end
 end
