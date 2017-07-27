@@ -5,3 +5,17 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+  <% if @items %>
+    <ul>
+    <% @items.each do |item| %>
+      <li>
+        Name: <%= item["name"] %><br>
+        Link to Repo: <%= link_to item["html_url"], item["html_url"] %><br>
+        Description: <%= item["description"] %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
+
