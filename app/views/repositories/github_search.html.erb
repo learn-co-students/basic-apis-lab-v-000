@@ -1,0 +1,13 @@
+<div>
+  <% if @results %>
+    <ul>
+    <% @results.each do |result| %>
+      <li>
+        Name: <%= result["name"] %><br>
+        URL: <%= result["html_url"] %><br>
+        Description: <%= result["description"] %><br>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
