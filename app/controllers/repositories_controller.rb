@@ -7,7 +7,7 @@ class RepositoriesController < ApplicationController
 
   def github_search
     
-    resp = Faraday.get "https://api.github.com/search/repositories?access_token=6dd05852697afbb8b52d7d95955f383606a994b0&q=#{params['query']}"
+    resp = Faraday.get "https://api.github.com/search/repositories?access_token=&q=#{params['query']}"
     if resp.success?
       repos = JSON.parse(resp.body)
       @found_repos = []
