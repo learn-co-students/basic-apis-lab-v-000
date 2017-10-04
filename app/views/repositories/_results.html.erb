@@ -1,0 +1,16 @@
+<h1> Search Results </h1>
+
+<table border=1>
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Link
+    </th>
+    <th>
+      Description
+  </tr>
+    <%binding.pry %>
+    <%= render :partial => "/repositories/repo", :collection => @found_repositories, :as => :repository %>
+  </table>

@@ -5,3 +5,33 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @found_repos %>  
+ <h1> Search Results </h1>
+<table border=1>
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Link
+    </th>
+    <th>
+      Description
+      </th>
+  </tr>
+
+  <% @found_repos.each do |repository| %>
+    <tr>
+      <td>
+        <%= repository[:name] %>
+      </td>
+      <td>
+        <a href=<%= repository[:url] %>><%= repository[:url] %></a>
+      </td>
+      <td>               
+        <%= repository[:description] %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+<% end %>
