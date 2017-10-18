@@ -1,13 +1,15 @@
 class RepositoriesController < ApplicationController
 
+  require 'dotenv'
+
   def search
   end
 
   def github_search
     begin
     @resp = Faraday.get 'https://api.github.com/search/repositories' do |req|
-      req.params['client_id'] = 'Iv1.4152657178dd52b8'
-      req.params['client_secret'] = '3c1c1dd996aaf614ff68203a876f4c0a6603189c'
+      req.params['client_id'] = ENV['CLIENT_ID']
+      req.params['client_secret'] = ENV['CLIENT_SECRET']
       req.params['q'] = params['query']
     end
     body = JSON.parse(@resp.body)

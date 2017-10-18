@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails'
 gem 'faraday'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
