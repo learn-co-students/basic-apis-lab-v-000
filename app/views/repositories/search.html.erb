@@ -5,3 +5,8 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @resultsbody %>
+<%= @resultsbody.each do |result|%>
+  <%= link_to("#{result["html_url"]}",result["html_url"]) %>
+<% end %>
+<% end %>
