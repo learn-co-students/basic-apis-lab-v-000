@@ -6,7 +6,9 @@
 <% end %>
 
 <ul>
-<% if @projects %>
+<% if @error %>
+  <p> <%= @error %> </p>
+<% elsif @projects %>
   <% @projects.each do |project| %>
     <li>
       <h4><b>Proj Name:</b><%= project["name"] %></h4>
