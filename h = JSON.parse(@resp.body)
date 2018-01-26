@@ -1,0 +1,39 @@
+=> [32m#<Faraday::Response:0x0000000783f1b0[0m
+ @env[32m=[0m
+  [32m#<struct Faraday::Env[0m
+   method[32m=[0m[33m:get[0m,
+   body[32m=[0m
+    [31m[1;31m"[0m[31m    {[1;35m\n[0m[31m      [1;35m\"[0m[31mtotal_count[1;35m\"[0m[31m: 40,[1;35m\n[0m[31m      [1;35m\"[0m[31mincomplete_results[1;35m\"[0m[31m: false,[1;35m\n[0m[31m      [1;35m\"[0m[31mitems[1;35m\"[0m[31m: [[1;35m\n[0m[31m        {[1;35m\n[0m[31m          [1;35m\"[0m[31mid[1;35m\"[0m[31m: 3081286,[1;35m\n[0m[31m          [1;35m\"[0m[31mname[1;35m\"[0m[31m: [1;35m\"[0m[31mTetris[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mfull_name[1;35m\"[0m[31m: [1;35m\"[0m[31mdtrupenn/Tetris[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mowner[1;35m\"[0m[31m: {[1;35m\n[0m[31m            [1;35m\"[0m[31mlogin[1;35m\"[0m[31m: [1;35m\"[0m[31mdtrupenn[1;35m\"[0m[31m,[1;35m\n[0m[31m            [1;35m\"[0m[31mid[1;35m\"[0m[31m: 872147,[1;35m\n[0m[31m            [1;35m\"[0m[31mavatar_url[1;35m\"[0m[31m: [1;35m\"[0m[31mhttps://secure.gravatar.com/avatar/e7956084e75f239de85d3a31bc172ace?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png[1;35m\"[0m[31m,[1;35m\n[0m[31m            [1;35m\"[0m[31mgravatar_id[1;35m\"[0m[31m: [1;35m\"[0m[31m[1;35m\"[0m[31m,[1;35m\n[0m[31m            [1;35m\"[0m[31murl[1;35m\"[0m[31m: [1;35m\"[0m[31mhttps://api.github.com/users/dtrupenn[1;35m\"[0m[31m,[1;35m\n[0m[31m            [1;35m\"[0m[31mreceived_events_url[1;35m\"[0m[31m: [1;35m\"[0m[31mhttps://api.github.com/users/dtrupenn/received_events[1;35m\"[0m[31m,[1;35m\n[0m[31m            [1;35m\"[0m[31mtype[1;35m\"[0m[31m: [1;35m\"[0m[31mUser[1;35m\"[0m[31m[1;35m\n[0m[31m          },[1;35m\n[0m[31m          [1;35m\"[0m[31mprivate[1;35m\"[0m[31m: false,[1;35m\n[0m[31m          [1;35m\"[0m[31mhtml_url[1;35m\"[0m[31m: [1;35m\"[0m[31mhttps://github.com/dtrupenn/Tetris[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mdescription[1;35m\"[0m[31m: [1;35m\"[0m[31mA C implementation of Tetris using Pennsim through LC4[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mfork[1;35m\"[0m[31m: false,[1;35m\n[0m[31m          [1;35m\"[0m[31murl[1;35m\"[0m[31m: [1;35m\"[0m[31mhttps://api.github.com/repos/dtrupenn/Tetris[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mcreated_at[1;35m\"[0m[31m: [1;35m\"[0m[31m2012-01-01T00:31:50Z[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mupdated_at[1;35m\"[0m[31m: [1;35m\"[0m[31m2013-01-05T17:58:47Z[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mpushed_at[1;35m\"[0m[31m: [1;35m\"[0m[31m2012-01-01T00:37:02Z[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mhomepage[1;35m\"[0m[31m: [1;35m\"[0m[31m[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31msize[1;35m\"[0m[31m: 524,[1;35m\n[0m[31m          [1;35m\"[0m[31mstargazers_count[1;35m\"[0m[31m: 1,[1;35m\n[0m[31m          [1;35m\"[0m[31mwatchers_count[1;35m\"[0m[31m: 1,[1;35m\n[0m[31m          [1;35m\"[0m[31mlanguage[1;35m\"[0m[31m: [1;35m\"[0m[31mAssembly[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mforks_count[1;35m\"[0m[31m: 0,[1;35m\n[0m[31m          [1;35m\"[0m[31mopen_issues_count[1;35m\"[0m[31m: 0,[1;35m\n[0m[31m          [1;35m\"[0m[31mmaster_branch[1;35m\"[0m[31m: [1;35m\"[0m[31mmaster[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mdefault_branch[1;35m\"[0m[31m: [1;35m\"[0m[31mmaster[1;35m\"[0m[31m,[1;35m\n[0m[31m          [1;35m\"[0m[31mscore[1;35m\"[0m[31m: 10.309712[1;35m\n[0m[31m        }[1;35m\n[0m[31m      ][1;35m\n[0m[31m    }[1;35m\n[0m[31m[1;31m"[0m[31m[0m,
+   url[32m=[0m
+    [32m#<URI::HTTPS https://api.github.com/search/repositories?client_id=N1WA1KZL2EDDKSMVGSPPI5F5H21DJBPBKUKPOFYWMK3BKJQR&client_secret=00QJAMOOEELIYWJHQWD2J5ARGMLELVTUGYVDC4RBAYOGRLJB&q=tetris>[0m,
+   request[32m=[0m
+    [32m#<struct Faraday::RequestOptions[0m
+     params_encoder[32m=[0m[1;36mnil[0m,
+     proxy[32m=[0m[1;36mnil[0m,
+     bind[32m=[0m[1;36mnil[0m,
+     timeout[32m=[0m[1;36mnil[0m,
+     open_timeout[32m=[0m[1;36mnil[0m,
+     boundary[32m=[0m[1;36mnil[0m,
+     oauth[32m=[0m[1;36mnil[0m,
+     context[32m=[0m[1;36mnil[0m[32m>[0m,
+   request_headers[32m=[0m{[31m[1;31m"[0m[31mUser-Agent[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mFaraday v0.14.0[1;31m"[0m[31m[0m},
+   ssl[32m=[0m
+    [32m#<struct Faraday::SSLOptions[0m
+     verify[32m=[0m[1;36mtrue[0m,
+     ca_file[32m=[0m[1;36mnil[0m,
+     ca_path[32m=[0m[1;36mnil[0m,
+     verify_mode[32m=[0m[1;36mnil[0m,
+     cert_store[32m=[0m[1;36mnil[0m,
+     client_cert[32m=[0m[1;36mnil[0m,
+     client_key[32m=[0m[1;36mnil[0m,
+     certificate[32m=[0m[1;36mnil[0m,
+     private_key[32m=[0m[1;36mnil[0m,
+     verify_depth[32m=[0m[1;36mnil[0m,
+     version[32m=[0m[1;36mnil[0m[32m>[0m,
+   parallel_manager[32m=[0m[1;36mnil[0m,
+   params[32m=[0m[1;36mnil[0m,
+   response[32m=[0m[32m#<Faraday::Response:0x0000000783f1b0[0m ...[32m>[0m,
+   response_headers[32m=[0m{},
+   status[32m=[0m[1;34m200[0m,
+   reason_phrase[32m=[0m[31m[1;31m"[0m[31m[1;31m"[0m[31m[0m[32m>[0m,
+ @on_complete_callbacks[32m=[0m[][32m>[0m
