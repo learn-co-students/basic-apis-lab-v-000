@@ -5,3 +5,8 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @results %>
+	<%= @results %>
+<% elsif %>
+	<%= @error %>
+<% end %>
