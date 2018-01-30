@@ -6,7 +6,13 @@
 <% end %>
 
 <% if @results %>
-	<%= @results %>
+	<% @results.each do |result| %>
+		<p>
+		name: <%= result["name"] %>
+		<%= link_to result["html_url"], result["html_url"] %>
+		description: <%= result["description"] %>
+		</p>
+	<% end %>
 <% elsif %>
 	<%= @error %>
 <% end %>
