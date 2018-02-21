@@ -5,3 +5,13 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+  <% if @error %>
+  <p><%= @error %></p>
+<% else %>
+<ul>
+  <li> <%=@name %> </li>
+  <li> <%=@desc%> </li>
+  <li> <a href="<%=@repo_url%>"><%=@repo_url%></a> </li>
+</ul>
+<%end%>
