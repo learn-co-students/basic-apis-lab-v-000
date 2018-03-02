@@ -9,8 +9,8 @@
   <% if @results %>
     <% @results.each do |r| %>
       <div>
-        <p><%= r['items']['name'] %> - <a href="<%=r['items']['html_url']%>"></a></p>
-        <p><%= r['items']['description'] %></p>
+        <p><%= r['name'] %> - <%= link_to r['html_url'], r['html_url'] %></p>
+        <p><%= r['description'] %></p>
       </div> <hr>
     <% end %>
   <% elsif @error %>

@@ -1,6 +1,4 @@
 class RepositoriesController < ApplicationController
-  client_id = ""
-  client_secret = ""
   def search
 
   end
@@ -8,16 +6,16 @@ class RepositoriesController < ApplicationController
   def github_search
     begin
       @resp = Faraday.get 'https://api.github.com/search/repositories' do |req|
-        req.params['client_id'] = client_id
-        req.params['client_secret'] = client_secret
+        req.params['client_id'] = "" #removed before submit
+        req.params['client_secret'] = "" #removed before submit
         req.params['q'] = params[:query]
       end
 
       @body = JSON.parse(@resp.body)
-      if @body.success?
-        @results = @body['response']['']
+      if @resp.success?
+        @results = @body['items']
       else
-        @error = @body['meta']['errorDetail']
+        @error = @body['message']
       end
 
     rescue Faraday::ConnectionFailed
