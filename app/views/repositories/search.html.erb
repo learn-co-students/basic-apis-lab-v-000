@@ -5,3 +5,17 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+  <% if @venues %>
+    <ul>
+    <% @venues.each do |venue| %>
+      <li>
+        <%= venue["full_name"] %><br>
+        <%# venue["html_url"] %><br>
+        <a href= <%= venue["html_url"] %>><%= venue["html_url"] %></a>
+        Description: <%= venue["description"] %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
