@@ -1,7 +1,33 @@
 <h1>Search Github Repositories</h1>
+
 <%= form_tag '/search' do %>
-  <%= label_tag :query %>
+  <%= label_tag :query, "Repository Search Term:" %>
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div id="results">
+  <% if @error %>
+    <h3>Error</h3>
+    <% if @error.class == Hash %>
+      <p><strong><%= @error["message"] %>:</strong> Field <%= @error["errors"][0]['field'] %> is <%= @error["errors"][0]['code'] %></p>
+    <% else %>
+      <p><%= @error %></p>
+    <% end %>
+  <% elsif @response_hash %>
+    <p><strong>Total Repositories Found:</strong> <%= @response_hash['total_count'] %></p>
+    <h3>Search Results:</h3>
+    <ul>
+    <% @response_hash['items'].each do |repo| %>
+      <li>
+        <p>
+          Name: <%= repo['name']%><br>
+          Link: <a href="<%= repo['html_url']%>" target="_blank"><%= repo['html_url']%></a><br>
+          Created By: <%= repo['owner']['login'] %><br>
+          Description: <%= repo['description']%>
+        </p>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
