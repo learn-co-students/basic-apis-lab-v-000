@@ -5,3 +5,7 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @repos %>
+  <%= render partial: 'repo', collection: @repos, as: :repo %>
+<% end %>  
+
