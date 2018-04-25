@@ -4,8 +4,8 @@ class RepositoriesController < ApplicationController
   end
 
   def github_search
-    client_id = ENV[client_id]
-    client_secret = ENV[client_secret]
+    client_id = ENV['client_id']
+    client_secret = ENV['client_secret']
     repo = {}
     @repos = []
 
