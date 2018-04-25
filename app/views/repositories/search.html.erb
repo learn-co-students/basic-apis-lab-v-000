@@ -36,8 +36,9 @@
     </th></strong>
     <% @repos.each do |repo| %>
     <tr>
-      <td><%= repo["name"] %></td>    
-      <td><a href="<%= link_to repo["html_url"] %>"></td>
+      <td><%= repo["name"] %></td>
+      <td><%= link_to repo["html_url"], repo["html_url"] %></td><br>
+      
       <td><%= repo["description"] %></td>
     <% end %>
   <% end %>
