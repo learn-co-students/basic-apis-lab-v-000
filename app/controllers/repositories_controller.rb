@@ -12,12 +12,12 @@ class RepositoriesController < ApplicationController
           req.params['q'] = query
         end
         body = JSON.parse(@resp.body)
-        binding.pry
-        # if @resp.success?
-        #   @results = body["response"]["venues"]
-        # else
-        #   @error = body["meta"]["errorDetail"]
-        # end
+        @results = []
+        if @resp.success?
+          @results = body["items"]
+        else
+          @error = "There has been an error in your request to Github"
+        end
 
       rescue Faraday::ConnectionFailed
         @error = "There was a timeout. Please try again."
