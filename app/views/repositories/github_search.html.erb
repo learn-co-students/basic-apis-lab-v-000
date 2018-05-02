@@ -1,0 +1,14 @@
+<h1>Search Results</h1>
+<div>
+  <% if @error %>
+    <h3><%= @error %></h3>
+  <% elsif @repos %>
+    <ul>
+      <% @repos.each do |r| %>
+        Name: <%= r['name'] %><br />
+        URL: <%= r['html_url'] %><br />
+        Description: <%= r['description'] %><br />
+      <% end %>
+    </ul>
+  <% end %>
+</div>
