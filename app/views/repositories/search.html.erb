@@ -6,11 +6,14 @@
 <% end %>
 <div>
   <ul>
-    <% @body['items'].each do |item| %>
-      <li>
-        Name: <%= link_to item['name'], item['html_url'] %>
-        Description: <%= item['description'] %>
-      </li>
+    <% if @body %>
+      <% @body['items'].each do |item| %>
+        <li>
+          Name: <%= item['name'] %>
+          Description: <%= item['description'] %>
+          <%= link_to item['html_url'], item['html_url'] %>
+        </li>
+      <% end %>
     <% end %>
   </ul>
 </div>

@@ -8,8 +8,8 @@ class RepositoriesController < ApplicationController
       req.params['client_id'] = '11a4554f14d625879887c64a1d1222ea4a3b59b4'
       req.params['q'] = params[:query]
     end
-    @body = JSON.parse(@resp.body) #works fine here
-    binding.pry
+    body = JSON.parse(@resp.body)
+    @body = body
     render 'search'
   end
 end
