@@ -5,3 +5,16 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+<% if @errors %>
+  <% @errors.each do |error| %>
+    <p>Oops! There was the following error: <%= error["resource"] %> <%= error["field"] %> <%= error["code"] %></p>
+  <% end %>
+<% elsif @repos %>
+  <% @repos.each do |repo| %>
+    <%= repo["name"] %> <br>
+    <%#  %>
+  <% end %>
+<% end %>
+</div>
+
