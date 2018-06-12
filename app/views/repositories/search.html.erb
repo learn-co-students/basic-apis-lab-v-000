@@ -12,8 +12,9 @@
   <% end %>
 <% elsif @repos %>
   <% @repos.each do |repo| %>
-    <%= repo["name"] %> <br>
-    <%#  %>
+    <h3><%= repo["name"] %></h3>
+    <p><%= repo["description"] %></p>
+    <%= link_to repo["html_url"], repo["html_url"] %>
   <% end %>
 <% end %>
 </div>
