@@ -45,3 +45,12 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
+
+# Added at 2018-06-13 19:50:16 +0100 by roberthughes:
+gem "faraday", "~> 0.15.2"
+
+# Added at 2018-06-13 19:50:30 +0100 by roberthughes:
+gem "dotenv-rails", "~> 2.4"
+
+# Added at 2018-06-13 19:59:12 +0100 by roberthughes:
+gem "pry", "~> 0.11.3"
