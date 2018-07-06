@@ -5,13 +5,16 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+
+
 <% if @body_hash %>
-<h1>Repositories</h1>
-<% @body_hash.each do |result| %>
-  <li><%= result['name'] %>
-  <a href="<%= result['html_url'] %>"><%= result['html_url'] %></a>
-<%= result['description'] %> </li>
-<br>
-<% end %>
+<ul>
+  <h1>Repositories</h1>
+  <% @body_hash.each do |result| %>
+    <li><%= result['name'] %> <br>
+    <%= link_to result['html_url'], result['html_url'] %> <br>
+  <%= result['description'] %> </li> <br><br>
+  <% end %>
+</ul>
 <% end %>
 
