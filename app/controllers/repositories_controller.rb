@@ -9,7 +9,7 @@ class RepositoriesController < ApplicationController
     @resp = Faraday.get 'https://api.github.com/search/repositories' do |req|
       req.params['access_token'] = '3b1728f0bb95350bd4c2977ff2abf9388bd88e0a'
       req.params['q'] = params[:query].to_s
-      req.params['page'] = 50
+      req.params['per_page'] = 50
       req.options.timeout = 10
     end
 
