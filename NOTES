@@ -1,0 +1,9 @@
+Private key 4a:be:0a:64:82:f4:45:22:ee:91:32:5e:ae:67:95:38:d5:67:40:0b
+
+<ul>
+      <% @results.each do |result| %>
+        <li>
+          <%= result %>
+        </li>
+      <% end %>
+    </ul>
