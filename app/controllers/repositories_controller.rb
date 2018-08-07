@@ -10,7 +10,7 @@ class RepositoriesController < ApplicationController
       req.params["client_id"] = 'f0c57ed6e5bbc29a3ddb'
       req.params["client_secret"] = '85229db6b17b6de781b7e48300e26efcb1feb04c'
     end
-    @repos = JSON.parse(@resp.body)
+    @repos = JSON.parse(@resp.body)['items']
     render 'search'
   end
 end
