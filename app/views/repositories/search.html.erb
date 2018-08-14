@@ -12,7 +12,7 @@
       <li>  
         <%= repo['name'] %>
         <%= repo['description'] %>
-        <%= link_to repo['html_url'] %>
+        <a href='<%= repo['html_url'] %>' target="_blank"> <%= repo['html_url'] %><a>
       </li>
     <% end %>  
     <ul>
