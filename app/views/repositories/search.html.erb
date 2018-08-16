@@ -5,3 +5,30 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+  <!-- display error msg-->
+  <% if @error %> 
+    <p><%= @error %></p>
+
+  <!-- display venue info -->
+  <% elsif @repos %>
+    <ul>
+      <% @repos.each do |repo| %>
+        <li>
+          <%= repo["name"] %><br>
+          <%= repo["description"] %><br>
+          <a href="<%= repo["html_url"] %>"><%= repo["html_url"] %>"</a>
+        </li>
+      <% end %>
+      </ul>
+    <% end %>
+</div>
+<!--
+
+display:
+
+repo name: Tetris
+repo desc: 'A C implementation of Tetris using Pennsim through LC4'
+repo URL: https://github.com/dtrupenn/Tetris
+
+-->
