@@ -14,3 +14,4 @@ RSpec.describe "Searching Github", type: :feature do
     expect(page).to have_content("A C implementation of Tetris using Pennsim through LC4")
   end
 end
+
