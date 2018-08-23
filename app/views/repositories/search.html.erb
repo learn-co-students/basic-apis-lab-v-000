@@ -2,6 +2,21 @@
 <%= form_tag '/search' do %>
   <%= label_tag :query %>
   <%= text_field_tag :query %>
-  <%= submit_tag "Search Github!" %>
+  <%= submit_tag "Search Github!" %><br>
+  <div>
+	  <% if @error %>
+	    <p><%= @error %></p>
+	  <% elsif @repos %>
+	    <ul>
+	    <% @repos.each do |repo| %>
+	      <li>
+	        <%= link_to repo["html_url"], repo["html_url"] %><br>
+	        <%= repo["description"] %><br>
+	      </li>
+	    <% end %>
+	    </ul>
+	  <% end %>
+  </div>
+ 
 <% end %>
 
