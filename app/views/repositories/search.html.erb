@@ -10,9 +10,10 @@
   <% if @items %>
     <ul>
     <% @items.each do |item| %>
-      <li>
+      <li><a href="<%= item['html_url'] %>"><%= item['html_url'] %></a>
         <%= item["name"] %><br>
         <%= item["owner"]["login"] %><br>
+        <%= item["description"] %>
       </li>
     <% end %>
     </ul>
