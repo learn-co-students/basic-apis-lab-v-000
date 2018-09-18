@@ -40,6 +40,7 @@ group :development, :test do
   gem 'shoulda-matchers'
 end
 gem 'webmock', group: :test
+gem 'faraday'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
