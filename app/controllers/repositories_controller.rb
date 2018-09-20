@@ -11,6 +11,11 @@ class RepositoriesController < ApplicationController
       req.params['client_secret'] = 'client_secret'
     end
     search_hash = JSON.parse(@resp.body)
+    if @resp.success?
+      @items = search_hash['response']['items']
+    else
+      @error = 'Search Error - ' + search_hash['meta']['status']
+    end
   end
 
   private
