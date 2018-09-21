@@ -7,7 +7,9 @@
 
 <h2>Search Results</h2>
 <ul>
-  <% @items.each do |item| %>
-  <li><a href="<%= item['html_url'] %>"><%= item['name'] %> - <%= item['description'] %></a></li>
+  <% if @items %>
+    <% @items.each do |item| %>
+      <li><a href="<%= item['html_url'] %>"><%= item['name'] %> - <%= item['description'] %></a></li>
+    <% end %>
   <% end %>
 </ul>
