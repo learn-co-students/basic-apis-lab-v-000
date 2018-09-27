@@ -5,3 +5,8 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @result %>
+  Name: <%= @result["name"] %>
+  Link: <a href="<%= @result["html_url"] %>"><%= @result["html_url"] %></a>
+  Description: <%= @result["description"] %>
+<% end %>
