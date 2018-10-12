@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe RepositoriesController, type: :controller do
+RSpec.describe RepositoriesController, type: :controller do 
 
   describe "github_search" do
 
