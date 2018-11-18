@@ -5,3 +5,10 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+  <% if @resp %>
+  	<%= @name %>
+   	<%= link_to(@url, @url) %>
+  	<%= @description %>
+  <% end %>
+</div>
