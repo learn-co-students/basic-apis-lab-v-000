@@ -1,0 +1,15 @@
+<h1>Search Results</h1>
+
+<% @repos.each do |repo|%>
+<ul>
+<li>
+    <%= repo["name"] %>
+</li>
+<li>
+    <a href='#{repo["html_url"]}'><%= {repo["html_url"]}%>
+</li>
+<li>
+    <%= repo["description"]%>
+</li>
+</ul>
+<%end%>
