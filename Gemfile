@@ -24,10 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'faraday'
 gem 'pry'
-<<<<<<< HEAD
 
-=======
->>>>>>> a7dfd0f3e06fc24a04d8cbad98589df2036bc454
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

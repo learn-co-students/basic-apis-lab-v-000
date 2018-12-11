@@ -4,27 +4,14 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
-
-<<<<<<< HEAD
+<% if @items %>
 <div>
 
   <% @items.each do |item| %>
-  <h1><%= item["name"]%></h1>
-  <p>URL:<%=link_to item["html_url"], item["owner"]["html_url"]%></p>
-  <p>Description:<%= item["owner"]["description"]%></p>
+    <h1><%= item["name"]%></h1>
+    <p>URL:<%=link_to item["html_url"], item["html_url"]%></p>
+    <p>Description:<%= item["description"]%></p>
   <% end %>
 
 </div>
-=======
-
-<% if @results %>
-<ul>
-  <% @results.each do |result| %>
-    <li><%= result['name'] %><br>
-        <%= link_to result["html_url"], result["html_url"] %><br>
-        <%= result["description"] %>
-    </li>
-  <% end %>
-</ul>
 <% end %>
->>>>>>> a7dfd0f3e06fc24a04d8cbad98589df2036bc454
