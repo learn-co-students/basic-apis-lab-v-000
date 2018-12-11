@@ -64,7 +64,11 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.6.0)
+<<<<<<< HEAD
     faraday (0.15.4)
+=======
+    faraday (0.15.3)
+>>>>>>> a7dfd0f3e06fc24a04d8cbad98589df2036bc454
       multipart-post (>= 1.2, < 3)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
