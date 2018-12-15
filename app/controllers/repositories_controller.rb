@@ -18,7 +18,7 @@ class RepositoriesController < ApplicationController
 
     body = JSON.parse(@resp.body)
     if @resp.success?
-      @repos = body["items"]
+      @repos = body["items"]             # use "items" based on name used for the array of hashes in github developer examples
     else
       @error = body["meta"]["errorDetail"]
     end
