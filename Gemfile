@@ -44,4 +44,8 @@ gem 'webmock', group: :test
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  
+  gem 'faraday'
+  
+  gem 'bundler', '~> 1.16', '>= 1.16.1'
 end
