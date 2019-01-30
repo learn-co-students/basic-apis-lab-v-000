@@ -4,4 +4,19 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
+<div>
+  <% if @results %>
+    <ul>
+    <% @results.each do |result| %>
+      <li>
+        <%= result["name"] %><br>
+        <%= link_to result["html_url"], result["html_url"] %>
+        <%= result["description"] %>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
 
+<!-- github token for this lab -->
+<!-- 38cfc1885d347c1006693abcd09bc33804b639b3 -->
