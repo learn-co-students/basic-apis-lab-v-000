@@ -1,3 +1,5 @@
+NOTE: I had to set the repositories_controller to be ignored by Github in order to complete this lab so if it looks like I'm missing a bunch of stuff that's why
+
 # Basic APIs Lab
 
 ## Objectives
