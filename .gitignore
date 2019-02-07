@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+clientID: b1bb3f1be65d525b319c
+clientSecret: 2b4748113a55766f2ff7bdae9b6cfc8b190feaff
