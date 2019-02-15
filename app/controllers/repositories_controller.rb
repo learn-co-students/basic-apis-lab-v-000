@@ -1,33 +1,37 @@
 class RepositoriesController < ApplicationController
 
   def search
-
+  
   end
 
   def github_search
+    client_id = ENV['client_id']
+    client_secret = ENV['client_secret']
+    repo = {}
+    @repos = []
 
-    begin
+    
       @repo = Faraday.get 'https://api.github.com/search/repositories' do |req|
         #  for the client_id and Client_secret, you are expect to put the real
         # client_Id and client_secret into the code...
-        req.params['Iv1.bc97934ad1af1949'] = 'Iv1.bc97934ad1af1949' 
-        req.params['e7b6191c077586b201abb6c9820326c5ba7ce4af'] = 'e7b6191c077586b201abb6c9820326c5ba7ce4af'
-        req.params['v'] = '20160201'
-        req.params['name'] = params[:name]
-        req.params['link'] = 'url'
+        req.params['client_id'] = client_id
+        req.params['client_secret'] = client_secret
+        req.params['q'] = params[:query]
      end
+
+          body = JSON.parse(@resp.body)
+          if @resp.success?
+            @repos = body["items"]
+          else
+            @error = "errors! oh my" #body["meta"]["errorDetail"]
+          end
        render 'search'
-     end
+   end
 
-    end
-
-
-
-end
+ end
 
 
-# App ID: 25363
 
-# Client ID: Iv1.bc97934ad1af1949
 
-# Client secret: e7b6191c077586b201abb6c9820326c5ba7ce4af
+
+
