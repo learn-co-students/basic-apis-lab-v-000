@@ -12,6 +12,7 @@ class RepositoriesController < ApplicationController
       req.params['query'] = "tetris"
     end
 
+    # 
     # binding.pry
 
     body_hash = JSON.parse(@resp.body)
