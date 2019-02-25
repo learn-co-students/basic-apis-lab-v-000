@@ -8,8 +8,8 @@
 		  <% if @repos %>
   			<% @repos.each do |repo| %>
 				<%= repo['full_name'] %><br>
-				<a href='<%= repo["html_url"] %>'> <%= repo['html_url'] %> </a><br>
-				<%= repo['description'] %><br><br>
+				<%= repo['description'] %><br>
+				<a href='<%= repo["html_url"] %>'> <%= repo['html_url'] %> </a><br><br>
 			<% end %>
 		  <% end %>
 	  </ul>
