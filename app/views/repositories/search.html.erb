@@ -5,3 +5,10 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<% if @arr %>
+  <% @arr.each do |git| %>
+    <%=  git['name'] %><br>
+    <%= link_to git['html_url'], git['html_url'] %><br>
+    <% git['description'] %>
+  <% end %>
+<% end %>
