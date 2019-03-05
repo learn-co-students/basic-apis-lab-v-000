@@ -5,4 +5,8 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
-<%= @body %>
+<%# if @arr %>
+  <% @arr.each do |git| %>
+    <%=  git['name'] %><br>
+  <% end %>
+<%# end %>
