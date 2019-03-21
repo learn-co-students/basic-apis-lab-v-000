@@ -4,4 +4,13 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
 <% end %>
+<br></br>
+
+<% if @respSummary %>
+	<% @respSummary.each_with_index do |el, i| %>
+		<a href="<%= el[:html_url] %>"><%= el[:html_url] %></a>
+		<p> <%= (i + 1).to_s %> - <%= el[:name] %> <%= el[:description] %></p>
+		<br></br>
+	<% end %>
+<% end %>
 
