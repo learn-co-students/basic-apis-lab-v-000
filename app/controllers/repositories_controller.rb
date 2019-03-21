@@ -8,7 +8,7 @@ class RepositoriesController < ApplicationController
 		begin
 			@resp = Faraday.get 'https://api.github.com/search/repositories' do |req|
 				req.params['client_id'] = 'cpdundon'
-				req.params['client_secret'] = ''
+				req.params['client_secret'] = '' 
 				req.params['accept'] = 'v3'
 				req.params['q'] = params['query']
 				req.options.timeout = 2000

@@ -7,9 +7,9 @@
 <br></br>
 
 <% if @respSummary %>
-	<% @respSummary.each do |el| %>
-		<a href="<%= el[:html_url] %>"><%= el[:name] %></a>
-		<p><%= el[:description] %></p>
+	<% @respSummary.each_with_index do |el, i| %>
+		<a href="<%= el[:html_url] %>"><%= el[:html_url] %></a>
+		<p> <%= (i + 1).to_s %> - <%= el[:name] %> <%= el[:description] %></p>
 		<br></br>
 	<% end %>
 <% end %>
