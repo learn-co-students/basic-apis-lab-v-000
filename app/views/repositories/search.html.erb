@@ -10,7 +10,7 @@
     <% @repos.each do |repo| %>
       <li>
         <%= repo["name"] %><br>
-        <%= link_to result[:html_url], repo["html_url"]%>
+        <%= link_to repo[:html_url], repo["html_url"]%>
         <%= repo["description"] %><br>
       </li>
     <% end %>
