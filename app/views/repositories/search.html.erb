@@ -5,3 +5,13 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<h1>Repository Display</h1>
+<div>
+    <%if @items%>
+      <%@items.each do |item|%>
+        <%= item["name"] %>
+        <%= link_to item["html_url"], item["html_url"] %>
+        <%= item["description"] %>
+      <% end %>
+    <%end%>
+</div>
