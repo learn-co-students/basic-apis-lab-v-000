@@ -5,3 +5,11 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+
+<% if @items %>
+
+<p><%= @items[0]["description"] %><br>
+<%= link_to @items[0]["html_url"], @items[0]["html_url"]%>
+</p>
+
+<% end %>
