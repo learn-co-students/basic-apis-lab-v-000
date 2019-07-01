@@ -3,5 +3,14 @@
   <%= label_tag :query %>
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
+
+  <% if @venues
+      @venues.each do |venue| %>
+        <%= venue["name"]%>
+        <%= venue["description"]%>
+        <%= link_to venue["html_url"], venue["html_url"]%>
+    <% end %>
+  <% end %>
+
 <% end %>
 
