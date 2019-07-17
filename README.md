@@ -23,3 +23,5 @@ reading skills as well as your coding skills!
 3. Display the search results on the page. Include the name, a link to
    the repository, and the description.
 4. Try it out, and make sure all tests pass!
+
+**Top-tip:** Dotenv is a great way to keep configuration variables for development, but always remember to add `.env` to your `.gitignore` so you don't share your secrets with everyone else!
