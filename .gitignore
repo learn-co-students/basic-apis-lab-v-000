@@ -2,6 +2,9 @@
 
 .DS_Store
 
+# Ignore sensitive .env data
+.env
+
 ### Node ###
 # Logs
 logs
