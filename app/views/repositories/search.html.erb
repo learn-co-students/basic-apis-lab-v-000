@@ -19,7 +19,7 @@
           <% @repositories.each do |repository| %>
           <tr>
             <td><%= repository["name"]%></td>
-            <td><%= link_to repository["html_url"] %></td>
+            <td><%= link_to repository["html_url"], repository["html_url"] %></td>
             <td><%= repository["description"]%></td>
           </tr>
           <% end %>
