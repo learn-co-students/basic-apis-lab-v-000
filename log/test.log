@@ -1,0 +1,404 @@
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 18:15:57 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 371ms (Views: 360.6ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 18:15:58 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 18:20:24 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 191ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 18:20:24 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 18:21:53 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 198ms (Views: 187.5ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 18:21:53 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 18:25:59 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 205ms (Views: 193.7ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 18:25:59 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 19:01:04 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 232ms (Views: 223.4ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 19:01:04 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 19:12:10 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 235ms (Views: 224.9ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 19:12:10 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 19:13:39 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 238ms (Views: 225.9ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 19:13:39 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+No template found for RepositoriesController#github_search, rendering head :no_content
+Completed 204 No Content in 43ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 19:14:14 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 240ms (Views: 229.1ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 19:14:14 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+No template found for RepositoriesController#github_search, rendering head :no_content
+Completed 204 No Content in 23ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 43ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 19:57:54 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 259ms (Views: 248.6ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 19:57:54 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 21:35:05 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 250ms (Views: 235.9ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 21:35:05 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 21:35:27 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 238ms (Views: 230.7ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 21:35:27 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 40ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 21:37:07 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 227ms (Views: 217.4ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 21:37:07 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 38ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 21:39:27 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 213ms (Views: 202.6ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 21:39:27 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 43ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 21:51:16 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 235ms (Views: 222.9ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 21:51:16 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.7ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 43ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 21:55:18 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 239ms (Views: 229.0ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 21:55:18 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 44ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 21:56:52 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 228ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 21:56:52 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 39ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 22:00:52 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 270ms (Views: 259.7ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 22:00:53 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 41ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 22:02:12 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 216ms (Views: 206.3ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 22:02:12 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 37ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 22:05:21 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 238ms (Views: 225.8ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 22:05:21 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 58ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 22:05:39 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 234ms (Views: 225.9ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 22:05:39 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"query"=>"tetris"}
+  Rendering repositories/search.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered repositories/search.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 45ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/search" for 127.0.0.1 at 2020-02-04 22:31:20 -0500
+Processing by RepositoriesController#search as HTML
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 213ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+Started POST "/search" for 127.0.0.1 at 2020-02-04 22:31:20 -0500
+Processing by RepositoriesController#github_search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tetris", "commit"=>"Search Github!"}
+  Rendering repositories/search.html.erb within layouts/application
+  Rendered repositories/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
